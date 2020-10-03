@@ -6,3 +6,18 @@
 
 3. install app in  <project name>/settings line 33(INSTALLED_APPS)
 - add rest_framework, rest_framework.authtoken, profile_api
+
+4. add model in profile_api models.py
+- like entity etc UserProfile (email ,name,is_active...)
+QS? What is model?
+a. class1: UserProfile
+b. class2: UserProfileManager -> create user
+
+5. add userprofile to settings
+- AUTH_USER_MODEL = 'profile_api.UserProfile(line 125)
+
+6. make migrations
+- python manage.py makemigration profile_api
+
+7. migration
+- python manage.py migrate
