@@ -1,0 +1,8 @@
+1. python -m django startproject <project name> <path>
+- create project
+
+2. python manage.py startapp <path>
+- create app
+
+3. install app in  <project name>/settings line 33(INSTALLED_APPS)
+- add rest_framework, rest_framework.authtoken, profile_api
